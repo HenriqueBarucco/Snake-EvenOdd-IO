@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Snake Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <div id="game-info">
+    <h2>Snake Game</h2>
+    <p>Use the arrow keys to control the snake.</p>
+    <p>Eat fruits with odd numbers if you are player 1, and fruits with even numbers if you are player 2.</p>
+    <p id="score"></p>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="snake.js"></script>
+</body>
+</html>
