@@ -36,6 +36,11 @@ socket.on("gameOver", () => {
     alert("Game over!");
 });
 
+socket.on("update", (data) => {
+    // Draw the snake
+    drawSnake();
+});
+
 function drawBlock(x, y, color) {
     ctx.fillStyle = color;
     ctx.fillRect(x * BLOCK_SIZE, y * BLOCK_SIZE, BLOCK_SIZE, BLOCK_SIZE);
